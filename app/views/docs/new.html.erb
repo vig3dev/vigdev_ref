@@ -1,0 +1,8 @@
+<%= form_with model: @doc do |doc| %>
+  <div class="field">
+    <%= doc.text_field :title %>
+    <%= doc.label :content %>
+    <%= doc.rich_text_area :content %>
+    <%= doc.submit %>
+  </div>
+<% end %>

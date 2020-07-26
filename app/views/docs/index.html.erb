@@ -1,0 +1,19 @@
+
+<br />
+<br />
+<% @docs.each do |doc| %>
+  <div>
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...A">
+      <div class="card-body">
+        <h5 class="card-title"><%= doc.title %></h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="/docs/<%= doc.id %>" class="btn btn-primary">View Doc# <%= doc.id %></a>
+      </div>
+    </div>
+  </div>
+  <br />
+<% end %>
+<br />
+<br />
+<button type="button" onclick="location.href = '/docs/new';" class="btn btn-outline-secondary">Secondary</button>
