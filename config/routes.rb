@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   controller :static_pages do
     get :contact
     get :payment
+    get :terms
+    get :privacy
   end
   resources :docs
 end

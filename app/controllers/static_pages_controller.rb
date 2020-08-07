@@ -7,4 +7,10 @@ class StaticPagesController < ApplicationController
 
   def payment
   end
+
+  def terms
+  end
+
+  def privacy
+  end
 end
