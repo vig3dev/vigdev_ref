@@ -17,6 +17,8 @@ body {
 .navbar-header {
   text-align: center;
   width: 100%;
+  min-width: fit-content;
+  
 }
 
 .sidenav {
@@ -85,4 +87,18 @@ body {
   background-color: olivedrab;
   min-height: 40vh;
   min-width: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("/assets/3.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
