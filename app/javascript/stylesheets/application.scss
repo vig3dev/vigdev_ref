@@ -10,6 +10,10 @@ body {
   clear: both;
 }
 
+.navbar {
+
+}
+
 .navbar-header {
   text-align: center;
   width: 100%;
@@ -41,7 +45,8 @@ body {
 }
 
 .sidenav a:hover {
-  color: #064579;
+  color: #2a2a2a;
+  -webkit-text-stroke: 1px #505050;
 }
 
 @media screen and (max-height: 450px) {
@@ -51,8 +56,11 @@ body {
 
 .contentBox {
   color: pink;
-  margin-left: 10vh;
+  margin-left: 15vh;
   margin-right: 10vh;
+  width: auto;
+  height: 100%;
+  position: relative;
 }
 
 .box1 {
