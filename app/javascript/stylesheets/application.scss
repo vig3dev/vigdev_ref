@@ -8,3 +8,16 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+a#nav-profile-tab.nav-item.nav-link, a#nav-home-tab.nav-item.nav-link, a#nav-contact-tab.nav-item.nav-link {
+  color: white;
+}
+
+a#nav-profile-tab.nav-item.nav-link.active, a#nav-home-tab.nav-item.nav-link.active, a#nav-contact-tab.nav-item.nav-link.active {
+  color: #343a40 ;
+}
+
+.navbar-header {
+  text-align: center;
+  width: 100%;
+}
