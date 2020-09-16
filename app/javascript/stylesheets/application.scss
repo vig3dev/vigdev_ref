@@ -1,23 +1,80 @@
 @import "~bootstrap/scss/bootstrap";
 @import "../../../app/assets/stylesheets/actiontext.scss";
 
-.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-  display: block;
-  height: 350px;
-  width: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-a#nav-profile-tab.nav-item.nav-link, a#nav-home-tab.nav-item.nav-link, a#nav-contact-tab.nav-item.nav-link {
+body {
+  background-color: #2a2a2a;
   color: white;
 }
 
-a#nav-profile-tab.nav-item.nav-link.active, a#nav-home-tab.nav-item.nav-link.active, a#nav-contact-tab.nav-item.nav-link.active {
-  color: #343a40 ;
+.clear {
+  clear: both;
 }
 
 .navbar-header {
   text-align: center;
   width: 100%;
+}
+
+.sidenav {
+  display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  & > li {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    transform-origin: center center;
+    list-style-type: none;
+    & > a {
+      display: block;
+    }
+  }
+  position: fixed;
+  min-width: 100px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #505050;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.contentBox {
+  color: pink;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
+
+.box1 {
+  background-color: yellowgreen;
+  min-height: 40vh;
+  width: 100%;
+}
+
+.box2{
+  background-color: brown;
+  min-height: 40vh;
+  min-width: 100%;
+}
+
+.box3 {
+  background-color: white;
+  min-height: 40vh;
+  min-width: 100%;
+}
+
+.box4 {
+  background-color: olivedrab;
+  min-height: 40vh;
+  min-width: 100%;
 }
