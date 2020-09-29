@@ -6,5 +6,10 @@ Rails.application.routes.draw do
     get :terms
     get :privacy
   end
-  resources :docs
+
+  namespace :apps do
+    resources :docs
+  end
+
+  
 end

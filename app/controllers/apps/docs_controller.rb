@@ -1,4 +1,4 @@
-class DocsController < ApplicationController
+class Apps::DocsController < ApplicationController
   def index
     @docs = Doc.all
   end
